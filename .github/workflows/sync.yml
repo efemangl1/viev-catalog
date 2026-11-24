@@ -1,0 +1,41 @@
+name: Katalog güncelle
+
+# Sitelerdeki ürünleri tarar ve data/catalog.json dosyasını günceller.
+# Uygulama bu dosyayı internetten okur; siteye ürün yüklenince en geç bir saat içinde uygulamada görünür.
+on:
+  schedule:
+    - cron: '0 * * * *' # her saat başı (UTC)
+  workflow_dispatch: {} # Actions sekmesinden elle de çalıştırılabilir
+
+permissions:
+  contents: write
+
+concurrency:
+  group: katalog-guncelle
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Siteleri tara ve kataloğu üret
+        run: node scripts/build-catalog.mjs
+
+      - name: Değiştiyse kaydet
+        run: |
+          if git diff --quiet -- data/catalog.json; then
+            echo "Katalog değişmedi."
+          else
+            git config user.name "viev-catalog-bot"
+            git config user.email "viev-catalog-bot@users.noreply.github.com"
+            git add data/catalog.json
+            git commit -m "Katalog güncellendi $(date -u +'%Y-%m-%d %H:%M') UTC"
+            git push
+          fi
