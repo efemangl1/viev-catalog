@@ -1,0 +1,114 @@
+{
+  "_not": "Bu dosyayı değiştirirseniz en geç bir saat içinde TÜM telefonlarda (APK, web) değişir. Virgül ve tırnak işaretlerine dikkat edin; bozuk dosya kaydedilmez, eski ayarlar kalır.",
+  "defaultStore": {
+    "mobilya": "m-batipark",
+    "corner": "c-ankara"
+  },
+  "stores": [
+    {
+      "id": "m-batipark",
+      "brand": "mobilya",
+      "city": "Ankara",
+      "name": "Batı Park Şube",
+      "address": "İnönü, 1730. Sk. No:1/4, 06370 Yenimahalle/Ankara",
+      "phone": "+905530720220",
+      "phoneLabel": "0553 072 02 20",
+      "whatsapp": "905530720220",
+      "maps": "https://maps.app.goo.gl/uCLjKD4V7hAmtHq9A",
+      "instagram": "viev.ankaraa"
+    },
+    {
+      "id": "m-siteler",
+      "brand": "mobilya",
+      "city": "Ankara",
+      "name": "Siteler Şube",
+      "address": "Siteler, Önder, Şenkal Sk. No:32, 06360 Altındağ/Ankara",
+      "phone": "+905523488126",
+      "phoneLabel": "0552 348 81 26",
+      "whatsapp": "905523488126",
+      "maps": "https://maps.app.goo.gl/cB43bziSbEZURYg98",
+      "instagram": "viev.ankaraa"
+    },
+    {
+      "id": "m-antalya",
+      "brand": "mobilya",
+      "city": "Antalya",
+      "name": "Antalya Şube",
+      "address": "Ziraat Bankası yanı, Tarım, Aspendos Blv. No:76 D:E, 07300 Muratpaşa/Antalya",
+      "phone": "+905423488120",
+      "phoneLabel": "0542 348 81 20",
+      "whatsapp": "905423488120",
+      "maps": "https://maps.app.goo.gl/WHtSuLhLXKDH5AR58",
+      "instagram": "viev.antalyaa"
+    },
+    {
+      "id": "m-konya",
+      "brand": "mobilya",
+      "city": "Konya",
+      "name": "Konya Şube",
+      "address": "Selçuk, Çevre Yolu Cd. 8/A, 42080 Selçuklu/Konya",
+      "phone": "+905423488122",
+      "phoneLabel": "0542 348 81 22",
+      "whatsapp": "905423488122",
+      "maps": "https://maps.app.goo.gl/jHmNPxZNGM4AdJU59",
+      "instagram": "viev.konya"
+    },
+    {
+      "id": "m-samsun",
+      "brand": "mobilya",
+      "city": "Samsun",
+      "name": "Samsun Şube",
+      "address": "Kirazlık, Atatürk Bl. 121/A, 55320 Tekkeköy/Samsun",
+      "phone": "+905525488127",
+      "phoneLabel": "0552 548 81 27",
+      "whatsapp": "905525488127",
+      "maps": "https://maps.app.goo.gl/yY5xP78SK1estUhq8",
+      "instagram": "viev.samsunn"
+    },
+    {
+      "id": "c-ankara",
+      "brand": "corner",
+      "city": "Ankara",
+      "name": "Merkez Mağaza",
+      "address": "Önder Mah. Kartalcık Sok. No:99, 06360 Siteler, Altındağ/Ankara",
+      "phone": "+905423488184",
+      "phoneLabel": "0542 348 81 84",
+      "whatsapp": "905423488184",
+      "maps": "https://maps.app.goo.gl/a1mN54yo4nKBjHDY7",
+      "instagram": "viev.corner.ankara"
+    },
+    {
+      "id": "c-aksaray",
+      "brand": "corner",
+      "city": "Aksaray",
+      "name": "Aksaray Mağaza",
+      "address": "Tacin, 1809. Sk. No:2 D:B, 68100 Aksaray Merkez/Aksaray",
+      "phone": "+905540218126",
+      "phoneLabel": "0554 021 81 26",
+      "whatsapp": "905540218126",
+      "maps": "https://maps.app.goo.gl/FjFuDpSAGY8brcTE7"
+    },
+    {
+      "id": "v-ankara",
+      "brand": "vijoy",
+      "city": "Ankara",
+      "name": "Vijoy Genç Odası",
+      "address": "Önder, Kartalcık Sk. No:99, 06360 Altındağ/Ankara",
+      "phone": "+905540218126",
+      "phoneLabel": "0554 021 81 26",
+      "whatsapp": "905540218126",
+      "maps": "https://maps.app.goo.gl/a1mN54yo4nKBjHDY7"
+    }
+  ],
+  "instagrams": [
+    { "label": "Viev Mobilya", "handle": "viev.mobilyaa" },
+    { "label": "Viev Mobilya · Ankara", "handle": "viev.ankaraa" },
+    { "label": "Viev Mobilya · Antalya", "handle": "viev.antalyaa" },
+    { "label": "Viev Mobilya · Konya", "handle": "viev.konya" },
+    { "label": "Viev Mobilya · Samsun", "handle": "viev.samsunn" },
+    { "label": "Viev Corner", "handle": "viev.cornerr" },
+    { "label": "Viev Corner · Ankara", "handle": "viev.corner.ankara" },
+    { "label": "Viev Corner · Konya", "handle": "viev.corner.konya" },
+    { "label": "Viev Corner · Samsun", "handle": "viev.corner.samsun" }
+  ]
+}

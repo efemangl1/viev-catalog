@@ -6,6 +6,9 @@ on:
   schedule:
     - cron: '0 * * * *' # her saat başı (UTC)
   workflow_dispatch: {} # Actions sekmesinden elle de çalıştırılabilir
+  push:
+    paths:
+      - 'config/settings.json' # numara/adres değişince saati beklemeden hemen çalış
 
 permissions:
   contents: write
