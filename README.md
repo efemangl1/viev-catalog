@@ -18,6 +18,19 @@ Viev uygulamasının ürün kataloğu ve ayarları. `vievmobilya.com.tr` ve `vie
 
 Dosyada hata varsa (eksik virgül vb.) Actions sekmesinde kırmızı çarpı çıkar ve **eski ayarlar kalır**, uygulama bozulmaz.
 
+## Yeni düğün paketi bildirimi
+Robot yeni bir **düğün paketi** bulursa uygulamayı kuran ve bildirimi açan telefonlara tek bir toplu bildirim gönderir.
+Kurallar `config/settings.json` içindeki `bildirimler` bölümündedir:
+- `acik`: `false` yaparsanız **hiçbir bildirim gitmez** (çok ürün yüklerken kullanın, sonra `true` yapın).
+  Kapalıyken eklenen ürünler sonradan da bildirim üretmez.
+- `kategoriler`: bildirim üreten kategoriler (şimdilik sadece `Düğün Paketi`).
+- `sessizBaslangic` / `sessizBitis`: bu saatler arasında (Türkiye saati) gönderilmez, sabaha kalır.
+- `gundeEnFazla`: günde en fazla kaç bildirim (fazlası ertesi güne kalır).
+
+Gerekli gizli anahtarlar (GitHub: *Settings → Secrets and variables → Actions*): `SUPABASE_URL`, `SUPABASE_SERVICE_KEY`.
+Tanımlı değilse robot bildirim GÖNDERMEZ, sadece ne göndereceğini yazar.
+Durum dosyası: `data/notify-state.json` (robot yönetir, elle değiştirmeyin).
+
 ## Diğer
 - **Elle çalıştırma:** GitHub'da *Actions → Katalog güncelle → Run workflow*.
 - **Bilgisayarda:** `node scripts/build-catalog.mjs`

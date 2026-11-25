@@ -1,5 +1,13 @@
 {
   "_not": "Bu dosyayı değiştirirseniz en geç bir saat içinde TÜM telefonlarda (APK, web) değişir. Virgül ve tırnak işaretlerine dikkat edin; bozuk dosya kaydedilmez, eski ayarlar kalır.",
+  "bildirimler": {
+    "_not": "acik: false yaparsanız HİÇBİR bildirim gitmez (toplu ürün yüklerken kullanın, sonra true yapın). kategoriler: hangi ürünler bildirim üretir. Saatler Türkiye saatidir.",
+    "acik": true,
+    "kategoriler": ["Düğün Paketi"],
+    "sessizBaslangic": 21,
+    "sessizBitis": 9,
+    "gundeEnFazla": 1
+  },
   "defaultStore": {
     "mobilya": "m-batipark",
     "corner": "c-ankara"
