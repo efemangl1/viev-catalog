@@ -137,7 +137,13 @@ function DRY_REASON() {
 const sb = (path, init = {}) =>
   fetch(`${SUPABASE_URL}/rest/v1/${path}`, {
     ...init,
-    headers: { apikey: SERVICE_KEY, Authorization: `Bearer ${SERVICE_KEY}`, 'Content-Type': 'application/json', ...(init.headers || {}) },
+    headers: {
+      apikey: SERVICE_KEY,
+      // Yeni tip anahtarlar (sb_secret_...) JWT değildir, sadece apikey başlığıyla gönderilir; eski service_role (JWT) ise Bearer da ister
+      ...(SERVICE_KEY.startsWith('sb_') ? {} : { Authorization: `Bearer ${SERVICE_KEY}` }),
+      'Content-Type': 'application/json',
+      ...(init.headers || {}),
+    },
   });
 
 const tokens = [];
