@@ -81,6 +81,7 @@
   "mobilya-dp-nami-dugun-paketi",
   "mobilya-dp-nev-dugun-paketi",
   "mobilya-dp-noble-dugun-paketi",
+  "mobilya-dp-olimpo-dugun-paketi",
   "mobilya-dp-onix-dugun-paketi",
   "mobilya-dp-opera-dugun-paketi",
   "mobilya-dp-oslo-dugun-paketi",
@@ -137,7 +138,7 @@
  ],
  "pending": [],
  "sent": {
-  "date": "",
-  "count": 0
+  "date": "2026-11-26",
+  "count": 1
  }
 }
