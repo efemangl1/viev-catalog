@@ -8,6 +8,31 @@
     "sessizBitis": 9,
     "gundeEnFazla": 1
   },
+  "duyuru": {
+    "_not": "Ana sayfanın en üstünde renkli bir bant gösterir. acik: true yapınca görünür, false yapınca kalkar. marka: hepsi / mobilya / corner. gitsin: bandın dokununca açacağı uygulama içi adres, örn. /katalog?kategori=D%C3%BC%C4%9F%C3%BCn%20Paketi (boş bırakabilirsiniz). bitis: bu tarihten sonra bant kendiliğinden kalkar (YYYY-AA-GG), boş bırakabilirsiniz.",
+    "acik": false,
+    "metin": "Hafta sonuna özel düğün paketi indirimleri başladı!",
+    "marka": "hepsi",
+    "gitsin": "",
+    "bitis": ""
+  },
+  "anaSayfa": {
+    "_not": "Ana sayfadaki büyük kutunun yazıları. Boş bıraktığınız alan uygulamadaki hazır metinle gösterilir. oneCikanlar: ana sayfada gösterilecek ürünlerin site adresi sonu (örn. olimpo-koltuk-takimi); boş liste = otomatik seçim, en fazla 8 ürün.",
+    "mobilya": {
+      "etiket": "ANKARA SİTELER",
+      "baslik": "Eviniz için zarafet",
+      "altYazi": "Salon, yatak ve yemek odasını tek pakette buluşturan düğün paketlerini keşfedin."
+    },
+    "corner": {
+      "etiket": "AKILLI MAĞAZA DENEYİMİ",
+      "baslik": "Türkiye'nin ilk köşe mağazası",
+      "altYazi": "Köşe, kollu modüller ve opsiyonlarla alanınıza tam oturan kombinasyonu kurun."
+    },
+    "oneCikanlar": {
+      "mobilya": [],
+      "corner": []
+    }
+  },
   "defaultStore": {
     "mobilya": "m-batipark",
     "corner": "c-ankara"

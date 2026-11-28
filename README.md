@@ -18,6 +18,18 @@ Viev uygulamasının ürün kataloğu ve ayarları. `vievmobilya.com.tr` ve `vie
 
 Dosyada hata varsa (eksik virgül vb.) Actions sekmesinde kırmızı çarpı çıkar ve **eski ayarlar kalır**, uygulama bozulmaz.
 
+## Duyuru bandı, ana sayfa yazıları, öne çıkan ürünler (kodsuz)
+`config/settings.json` dosyasından, uygulama yeniden yayınlanmadan değiştirilir (birkaç dakikada tüm telefonlarda):
+
+- **duyuru**: Ana sayfanın en üstünde renkli bir bant. `acik`: `true` görünür, `false` kalkar. `metin`: yazı (en fazla 160 karakter).
+  `marka`: `hepsi` / `mobilya` / `corner`. `gitsin`: bant dokununca açılacak adres, örn. `/katalog?kategori=D%C3%BC%C4%9F%C3%BCn%20Paketi`
+  (boş bırakılabilir). `bitis`: `YYYY-AA-GG`; bu tarihten sonra bant kendiliğinden kalkar (boş bırakılabilir).
+- **anaSayfa -> mobilya / corner**: büyük kutunun `etiket`, `baslik`, `altYazi` yazıları. Boş bırakılan alan hazır metinle gösterilir.
+- **anaSayfa -> oneCikanlar**: ana sayfada gösterilecek ürünler, ürünün site adresinin son kısmıyla, örn. `["olimpo-koltuk-takimi", "olimpo-dugun-paketi"]`
+  (düğün paketlerinde `mobilya-dp-olimpo-dugun-paketi` yazmak daha güvenli). Boş liste = otomatik seçim. En fazla 8 ürün.
+
+Hatalı yazarsanız (eksik virgül, tırnak, yanlış tarih biçimi) Actions sekmesinde kırmızı çarpı ve hata mesajı çıkar, **eski ayarlar kalır**, uygulama bozulmaz.
+
 ## Yeni düğün paketi bildirimi
 Robot yeni bir **düğün paketi** bulursa uygulamayı kuran ve bildirimi açan telefonlara tek bir toplu bildirim gönderir.
 Kurallar `config/settings.json` içindeki `bildirimler` bölümündedir:
