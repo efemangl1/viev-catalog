@@ -28,6 +28,8 @@
   "mobilya-dp-camelia-dugun-paketi",
   "mobilya-dp-cardi-dugun-paketi",
   "mobilya-dp-crysis-dugun-paketi",
+  "mobilya-dp-curve-aytas-dugun-paketi",
+  "mobilya-dp-curve-ceviz-dugun-paketi",
   "mobilya-dp-dallas-dugun-paketi",
   "mobilya-dp-dallas-premium-dugun-paketi",
   "mobilya-dp-dante-dugun-paketi",
@@ -138,7 +140,7 @@
  ],
  "pending": [],
  "sent": {
-  "date": "",
-  "count": 0
+  "date": "2026-11-28",
+  "count": 1
  }
 }
